@@ -1,4 +1,4 @@
-from interfaces import ITask, ITaskManager
+from src.interfaces import ITask, ITaskManager
 from typing import List
 
 class Task(ITask):

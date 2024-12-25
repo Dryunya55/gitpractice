@@ -1,4 +1,5 @@
-from classes import Task, TaskManager
+
+from src.classes import Task, TaskManager
 
 def main():
     task1 = Task("Task 1", "First Task")
@@ -10,7 +11,7 @@ def main():
 
     print("All Tasks:")
     for task in manager.get_all_tasks():
-        print(f"{task.title}: {'Completed' if task.is_completed else 'Not Completed'}")
+        print(f"{task.title}: {'Completed' if task.is_completed else 'Not completed'}")
 
     manager.remove_task("Task 1")
     print("After Removing 'Task 1':")
